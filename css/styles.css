@@ -1,0 +1,492 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html{
+  overflow-x: hidden;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+/* RESET FINALIZADO */
+body{
+  font-family: 'K2D', sans-serif;
+}
+.brown{
+  color:rgb(138, 85, 16);
+}
+.mt2{
+  margin-top:2rem;
+}
+.mt3{
+  margin-top:3rem;
+}
+.container{
+  width:70%;
+  margin: 0px auto;
+}
+.cursive{
+  font-family: 'Satisfy', cursive;
+}
+.font-small{
+  font-size: 1rem;
+}
+.font-large{
+  font-size: 2rem;
+}
+.font-xl{
+  font-size: 3rem;
+}
+.disabled{
+  color: rgb(98, 98, 98) !important;
+  cursor: default !important;
+}
+.button-large{
+  padding:16px 31px;
+  border: 1px solid  rgb(138, 85, 16);
+  border-radius: 28px;
+  transition: .5s all;
+  font-weight: bolder;
+}
+.button-large:hover{
+  background: rgb(138, 85, 16);
+  transition: .5s all;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+
+#coffe-cup{
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f7/Cup-o-coffee-simple.svg);
+  background-image: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  margin:0;
+  z-index: -1;
+}
+#header{
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-image: url(../images/beans-black-coffee-caffeine-894695.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom:5rem; 
+  z-index: 3;
+}
+#gradient{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(black,transparent);
+  z-index: -1;
+}
+#navbar{
+  z-index: 3;
+  height: auto;
+  line-height: 80px;
+  /* background: rgba(255, 255, 255, 0.6); */
+  display: flex;
+  width: 100%;
+  transition: .6s all;
+}
+#navbarSuple{
+  z-index: 3;
+  height: 80px;
+  /* background: rgba(255, 255, 255, 0.6); */
+  width: 100%;
+  transition: .6s all;
+  display: none;
+}
+#navbar .container ul{
+    float: right;
+    display: flex;
+    transition: .5s all;
+}
+#navbar .container ul li{
+  font-size: 12px;
+}
+#navbar .container ul li a:hover{
+  color: rgb(138, 85, 16);
+  transition: .5s all;
+}
+#button-menu{
+  display: none;
+  animation: roll 2s;
+  font-size: 1.5em;
+}
+@keyframes roll {
+  0%{
+    opacity: 0;
+    transform: rotateZ(180deg) translateX(-30%);
+  }
+}
+#navbar .container ul li{
+  margin-left:15px; 
+}
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+#info-header{
+  /* position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-100%,-100%); */
+  margin-top: 10em;
+  padding: 1em;
+  width: 70%;
+  color: white;
+  height: auto;
+  font-weight: 100;
+}
+#info-header h3{
+  margin:20px 0px 40px 0px;
+  font-size: 3em;
+  text-shadow: 4px 2px 2px rgba(12, 12, 12, 0.92);
+}
+#info-header p{
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+#mobile-menu{
+  display: none;
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 2rem 1rem;
+  background: rgba(0,0,0,.8);
+  transition: .3s all;
+}
+.ocult{
+  transform: translateX(-100%);
+  transition: .3s all;
+}
+#mobile-menu ul{
+  margin-top: 15px;
+}
+#mobile-menu li{
+  padding: 5px 0px;
+}
+@media screen and (max-width:1080px){
+  #coffe-cup{
+    margin: -5rem 5rem 10rem 0px;
+  }
+  
+}
+@media screen and (max-width:900px){
+  
+  #navbar .container ul{
+    display: none;
+    transition: .5s all;
+  }
+  #button-menu,#mobile-menu{
+    display: block;
+    
+  }
+  
+  
+  
+}
+@media screen and (max-width:720px){
+  #mobile-menu{ width: 50%;}
+  #coffe-cup{
+    margin: 0;
+  }
+  
+  #info-header{
+    /* position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-100%,-100%); */
+    margin-top: 5em;
+    padding: .5em;
+    width: 90%;
+    color: white;
+    height: auto;
+    font-weight: 100;
+  }
+  #info-header h3{
+    margin:20px 0px 40px 0px;
+    font-size: 2em;
+  }
+  #info-header p{
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  
+}
+@media screen and (max-width:400px){
+  #coffe-cup{
+    margin: 0px -6em 3em 0;
+  }
+  
+  #info-header{
+    /* position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-100%,-100%); */
+    margin-top: 5em;
+    padding: .5em;
+    width: 90%;
+    color: white;
+    height: auto;
+    font-weight: 100;
+  }
+  #info-header h3{
+    margin:20px 0px 40px 0px;
+    font-size: 1.5em;
+  }
+  #info-header p{
+    font-size: 1em;
+    font-weight: bolder;
+  }
+  #mobile-menu{
+    transition: .2s all;
+  }
+}
+/* HEADER  */
+/* MAIN */
+    /*BLOCKA*/
+#blockA {
+  margin-top: 5rem;
+  padding: 2rem 0px;
+  min-height: 600px;
+}
+#blockA .container .content-info{
+  margin: 2rem 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#blockA h2{
+  width: 100%;
+  
+  font-size: 3rem;
+  margin: 1rem 0px;
+}
+.video{
+  width: 480px;
+  height: 320px;
+  margin-top: 1em;
+  overflow: hidden;
+  border-radius: 28px;
+}
+.video video{
+ width: 100%;
+ border-radius: 28px;
+}
+.content-blockA{
+  width: 40%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.content-blockA h3{
+  font-size: 0.9rem;
+}
+.content-blockA h2{
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.content-blockA p{
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: dimgray;
+}
+
+
+@media screen and (max-width:1200px){
+  #blockA h2{
+    font-size: 2.5rem;
+    margin: .5rem 0px;
+  }
+  .content-blockA{
+    width: 45%;
+    padding: .5rem;
+  }
+  .video{
+    margin-top:.4rem; 
+    width: 360px;
+    height: 240px;
+  }
+}
+@media screen and (max-width:950px){
+  #blockA h2{
+    font-size: 2rem;
+    margin: .5rem 0px;
+  }
+  .content-blockA{
+    width: 100%;
+    padding: .2rem;
+  }
+  .video{
+    margin-top:.4rem; 
+    width: 360px;
+    height: 240px;
+  }
+}
+
+#blockB{
+  width: 100%;
+  min-height: 600px;
+  background: url(../images/art-beverage-black-982612.jpg); 
+  /* box-shadow: inset 0px 17px 27px -8px rgba(255,255,255,0.99),
+              inset 0px -17px 27px -8px rgba(255,255,255,0.99); */
+  /* filter: grayscale(30%); */
+  /* background: rgb(228, 228, 228); */
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  margin-bottom: 1rem;
+}
+#blockB .container{
+  display: flex;
+  flex-wrap: wrap;
+}
+#blockB h2, #blockB p{
+  width: 100%;
+  text-align: center;
+}
+#blockB h2{
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  color: white;
+}
+#blockB p{
+  
+  font-size: 1.2rem;
+}
+.box-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.card{
+  width: 25%;
+  min-height: 100px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 21px 23px 10px -13px rgba(138, 85, 16,0.2);
+  margin: 20px 0px;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card .title{
+  width:50%;
+  font-size: 1.2rem;
+}
+.card .price{
+  text-align: right;
+  width:50%;
+  font-size: 1.2rem;
+  color: rgb(138, 85, 16);
+}
+.card .card-image{
+  width: 95%;
+  max-height: 180px;
+  overflow: hidden;
+  margin: 15px auto;
+
+}
+.card .card-image img{
+  width: 100%;
+}
+.card .card-desc{
+  font-size: .7rem;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width:1200px){
+  #blockB  h2{
+    font-size: 2rem;
+  }
+  #blockB p{
+    font-size: 1.2rem;
+  }
+  .box-cards{
+    justify-content: space-around;
+  }
+  .card {
+    width: 35%;
+  }
+  .card-image{
+    margin: 5px 0px;
+  }
+  .card-desc{
+    font-size: .5rem;
+  }
+}
+@media screen and (max-width:720px){
+  #blockB  h2{
+    font-size: 1.5rem;
+  }#blockB p{
+    font-size: .9rem;
+  }
+  .card {
+    width: 80%;
+  }
+  .card-image{
+    margin: 3px 0px;
+  }
+  .card-desc{
+    font-size: .2rem;
+  }
+}
