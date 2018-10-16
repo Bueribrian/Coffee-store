@@ -31,7 +31,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  overflow-x: hidden;
+  overflow-y: scroll !important;
 }
 ol, ul {
 	list-style: none;
@@ -582,11 +584,23 @@ a{
 }
 
 @media (min-width: 480px){
+ 
   .gallery-img:first-child{
     grid-area: 1/1/span 2/span 2;
   }
   .gallery-img:nth-child(3){
     grid-column:span 2;
+  }
+}
+
+@media (max-width: 480px){
+ 
+  #blockC{
+    padding:2rem 0px;
+  }
+  #blockC .container{
+    width: 90%;
+    
   }
 }
 
@@ -640,7 +654,7 @@ a{
   min-height: 600px;
   background: rgb(138, 85, 16);
   color: black;
-  padding: 2rem 1rem;
+  padding: 2rem 0rem;
 }
 #blockD .container{
   
