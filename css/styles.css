@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   overflow-x: hidden;
-  overflow-y: scroll !important;
+  overflow-y: hidden !important;
 }
 ol, ul {
 	list-style: none;
@@ -652,7 +652,7 @@ a{
 #blockD{
   width: 100%;
   min-height: 600px;
-  background: rgb(138, 85, 16);
+  background: rgb(202, 125, 25);
   color: black;
   padding: 2rem 0rem;
 }
@@ -763,5 +763,118 @@ a{
   }
   #points-list li{
     width: 100%;
+  }
+}
+
+footer{
+  width: 100%;
+  min-height: 500px;
+  background: url(../images/beans-black-coffee-caffeine-894695.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  z-index: 2;
+}
+.gradient-bg-footer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent,black,black);
+  z-index: -3;
+}
+footer .container{
+  z-index: 4;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10rem 0px;
+  box-sizing: border-box;
+}
+.about-us{
+  width: 40%;
+  line-height: 1.5rem;
+}
+.title-footer{
+  font-size: 1.6rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+.contact-us{
+  width: 25%;
+}
+.follow-us{
+  width: 25%;
+}
+.social-list{
+  display: flex;
+  justify-content: space-around;
+}
+.social-list li {
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: rgb(138, 85, 16);
+  transition: .3s all;
+}
+.social-list li:hover {
+  color: white;
+  transition: .3s all;
+}
+.contact-us form input{
+  border-color: black black black black;
+  border-style: solid;
+  padding: .4rem;
+}
+.contact-us form i{
+  padding: 6px;
+  padding-top: 3px;
+  background: black;
+  margin-bottom: -10px;
+  border-color: black black black transparent;
+  border-width: 5px;
+}
+@media screen and (max-width:900px){
+  footer .container{
+    font-size: .9rem;
+  }
+  .title-footer{
+    font-size: 1.2rem;
+   
+  }
+  .about-us{
+    width: 50%;
+  }
+  .contact-us {
+    width: 50%;
+  }
+  .follow-us{
+    width: 100%;
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width:720px){
+  footer .container{
+    font-size: .9rem;
+  }
+  .title-footer{
+    font-size: 1.2rem;
+   
+  }
+  .about-us{
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .contact-us {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .follow-us{
+    width: 100%;
+    margin-top: 3rem;
   }
 }

@@ -26,7 +26,7 @@ window.onload = function(){
         if(window.pageYOffset > 200){
             navbar.style.position='fixed'
             navbar.style.top='0'
-            navbar.style.background='rgba(0,0,0,0.8)'
+            navbar.style.background='rgba(0,0,0,1)'
             document.querySelector('#navbarSuple').style.display='block'
         }else{
             navbar.style.position='static'
