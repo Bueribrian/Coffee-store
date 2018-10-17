@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Coffe - Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="http://www.iconarchive.com/download/i81447/custom-icon-design/mono-business-2/coffee.ico" />
@@ -26,32 +27,32 @@
             <div class="container">
                 <h1 id="logo-title" class="font-large"><a href="#">Coffe<span style="color:rgb(138, 85, 16);">Store</span></a></h1>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">COFFEE</a></li>
-                    <li><a href="#">REVIEW</a></li>
-                    <li><a href="#">PORTAFOLIO</a></li>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#blockA">ABOUT</a></li>
+                    <li><a href="#blockB">COFFEE</a></li>
+                    <li><a href="#blockC">GALLERY</a></li>
+                    <li><a href="#blockD">REVIEWS</a></li>
                     <li><a href="#" class="disabled">BLOG</a></li>
                 </ul>
-                <a href="#" id="button-menu">+</a>
+                <i id="button-menu">+</i>
             </div>
         </nav>
         <div id="mobile-menu" class="ocult">
-            <a href="#" id='exitBtn'>X</a>
+            <i id='exitBtn'>X</i>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">COFFEE</a></li>
-                <li><a href="#">REVIEW</a></li>
-                <li><a href="#">PORTAFOLIO</a></li>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#blockA">ABOUT</a></li>
+                <li><a href="#blockB">COFFEE</a></li>
+                <li><a href="#blockC">GALLERY</a></li>
+                <li><a href="#blockD">REVIEWS</a></li>
                 <li><a href="#" class="disabled">BLOG</a></li>
             </ul>
         </div>
         <div class="container">
             <div id="info-header">
-                <p class="">Welcome to Coffee page</p>
-                <h3 class="">"The only thing you need in the morning is a good cup of coffee"</h5>
-                    <a href="#" class="button-large">See the coffees</a>
+                <p class="" data-aos="fade-down" data-aos-delay="50" data-aos-duration="500">Welcome to Coffee page</p>
+                <h3 class="" data-aos='fade-right' data-aos-delay="250" data-aos-duration="2000">"The only thing you need in the morning is a good cup of coffee"</h5>
+                    <a href="#" class="button-large" data-aos="fade-up" data-aos-delay="250" data-aos-duration="2000">See the coffees</a>
             </div>
         </div>
         <div id="coffe-cup"></div>
@@ -62,12 +63,12 @@
     <main>
         <section id="blockA">
             <div class="container">
-                <h2 style='text-align: center;'>Aprende a hacer el mejor cafe!</h2>
+                <h2 style='text-align: center;' data-aos="fade-down" data-aos-delay="50" data-aos-duration="500">Aprende a hacer el mejor cafe!</h2>
                 <div class="content-info">
-                    <div class="video">
+                    <div class="video" data-aos="fade-right" data-aos-delay="250" data-aos-duration="500">
                         <video src="images/Coffee Machine Dispensing Coffee.mp4" muted='' controls='play'></video>
                     </div>
-                    <div class="content-blockA">
+                    <div class="content-blockA" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
                         <h3 class="brown">Coffee is life coffee is love</h3>
                         <h2>Acompañanos</h2>
                         <p>Todos los meses organizamos un dia para enseñar como preparar el mejor, como cuales granos
@@ -80,10 +81,10 @@
         </section>
         <section id="blockB">
             <div class="container">
-                <h2 class="">Los cafes mas deliciosos que te puedes encontrar</h2>
-                <p class="">Con leche deslactosada o de almendras</p>
+                <h2 class="" data-aos="fade-down" data-aos-delay="500" data-aos-duration="500">Los cafes mas deliciosos que te puedes encontrar</h2>
+                <p class="" data-aos="fade-up" data-aos-delay="550" data-aos-duration="500">Con leche deslactosada o de almendras</p>
                 <div class="box-cards">
-                    <div class="card">
+                    <div class="card" data-aos="fade-left" data-aos-delay="200" data-aos-duration="500">
                         <div class="title">Capuccino</div>
                         <div class="price">$80</div>
                         <div class="card-image">
@@ -94,7 +95,7 @@
                             corrupti omnis ut incidunt laboriosam eum error! Obcaecati, dolores?</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
                         <div class="title">Espresso</div>
                         <div class="price">$40</div>
                         <div class="card-image">
@@ -105,7 +106,7 @@
                             corrupti omnis ut incidunt laboriosam eum error! Obcaecati, dolores?</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-right" data-aos-delay="200" data-aos-duration="500">
                         <div class="title">Latte</div>
                         <div class="price">$45</div>
                         <div class="card-image">
@@ -116,7 +117,7 @@
                             corrupti omnis ut incidunt laboriosam eum error! Obcaecati, dolores?</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-left" data-aos-delay="200" data-aos-duration="500">
                         <div class="title">Macchiato</div>
                         <div class="price">$80</div>
                         <div class="card-image">
@@ -127,7 +128,7 @@
                             corrupti omnis ut incidunt laboriosam eum error! Obcaecati, dolores?</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-left" data-aos-delay="200" data-aos-duration="500">
                         <div class="title">Capuccino</div>
                         <div class="price">$80</div>
                         <div class="card-image">
@@ -140,7 +141,7 @@
 
 
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-left" data-aos-delay="200" data-aos-duration="500">
                         <div class="title">Espresso</div>
                         <div class="price">$40</div>
                         <div class="card-image">
@@ -151,7 +152,7 @@
                             corrupti omnis ut incidunt laboriosam eum error! Obcaecati, dolores?</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-left" data-aos-delay="200" data-aos-duration="500">
                         <div class="title">Latte</div>
                         <div class="price">$45</div>
                         <div class="card-image">
@@ -162,7 +163,7 @@
                             corrupti omnis ut incidunt laboriosam eum error! Obcaecati, dolores?</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
                         <div class="title">Macchiato</div>
                         <div class="price">$80</div>
                         <div class="card-image">
@@ -173,7 +174,7 @@
                             corrupti omnis ut incidunt laboriosam eum error! Obcaecati, dolores?</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-right" data-aos-delay="200" data-aos-duration="500">
                         <div class="title">Capuccino</div>
                         <div class="price">$80</div>
                         <div class="card-image">
@@ -192,28 +193,28 @@
                 <h2 id="gallery-title">Galeria de fotos de nuestro local</h2>
                 <p id="gallery-desc">Forma parte de esta galeria visitandonos</p>
                 <div id="gallery">
-                    <div class="gallery-img">
+                    <div class="gallery-img" data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="500">
                         <img class="img-galery" src="/images/gallery2.jpg" alt="">
                     </div>
-                    <div class="gallery-img">
+                    <div class="gallery-img" data-aos="fade-up-left" data-aos-delay="700" data-aos-duration="500">
                         <img class="img-galery" src="/images/art-blur-cappuccino-302899.jpg" alt="">
                     </div>
-                    <div class="gallery-img">
+                    <div class="gallery-img" data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="500">
                         <img class="img-galery" src="/images/gallery2.jpg" alt="">
                     </div>
-                    <div class="gallery-img">
+                    <div class="gallery-img" data-aos="fade-up-left" data-aos-delay="700" data-aos-duration="500">
                         <img class="img-galery" src="/images/gallery1.jpg" alt="">
                     </div>
-                    <div class="gallery-img">
+                    <div class="gallery-img" data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="500">
                         <img class="img-galery" src="/images/gallery5.jpg" alt="">
                     </div>
-                    <div class="gallery-img">
+                    <div class="gallery-img" data-aos="fade-up-left" data-aos-delay="700" data-aos-duration="500">
                         <img class="img-galery" src="/images/gallery3.jpg" alt="">
                     </div>
-                    <div class="gallery-img">
+                    <div class="gallery-img" data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="500">
                         <img class="img-galery" src="/images/gallery4.jpg" alt="">
                     </div>
-                    <div class="gallery-img">
+                    <div class="gallery-img" data-aos="fade-up-left" data-aos-delay="700" data-aos-duration="500">
                         <img class="img-galery" src="/images/gallery6.jpg" alt="">
                     </div>
 
@@ -223,32 +224,32 @@
         </section>
         <section id="blockD">
             <div class="container">
-                <h2 class="title">Conoce quienes nos recomiendan</h2>
-                <p class="sub-title">Lorem ipsum dolor sit amet.</p>
+                <h2 class="title" data-aos="fade-down" data-aos-delay="500" data-aos-duration="500">Conoce quienes nos recomiendan</h2>
+                <p class="sub-title" data-aos="fade-up" data-aos-delay="700" data-aos-duration="500">Lorem ipsum dolor sit amet.</p>
                 <div class="reviews">
-                    <div class="review">
+                    <div class="review" data-aos="fade-right" data-aos-delay="700" data-aos-duration="500">
                         <h2>Lorem ipsum dolor sit amet.</h2>
                         <div class="stars">
                             <ul class="stars-list">
-                                <li><i class="fas fa-star star-light"></i></li>
-                                <li><i class="fas fa-star star-light"></i></li>
-                                <li><i class="fas fa-star star-light"></i></li>
-                                <li><i class="fas fa-star "></i></li>
-                                <li><i class="fas fa-star"></i></li>
+                                <li><i data-aos="fade-left" data-aos-delay="700" data-aos-duration="500" class="fas  fa-star star-light"></i></li>
+                                <li><i data-aos="fade-left" data-aos-delay="700" data-aos-duration="500" class="fas  fa-star star-light"></i></li>
+                                <li><i data-aos="fade-left" data-aos-delay="700" data-aos-duration="500" class="fas  fa-star star-light"></i></li>
+                                <li><i data-aos="fade-left" data-aos-delay="700" data-aos-duration="500" class="fas  fa-star "></i></li>
+                                <li><i data-aos="fade-left" data-aos-delay="700" data-aos-duration="500" class="fas  fa-star"></i></li>
                             </ul>
                         </div>
                         <p class="review-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusantium quis
                             reprehenderit veritatis, maxime commodi quidem fuga impedit animi id!</p>
                     </div>
-                    <div class="review">
+                    <div class="review" data-aos="fade-left" data-aos-delay="600" data-aos-duration="500">
                         <h2>Lorem ipsum dolor sit amet.</h2>
                         <div class="stars">
                             <ul class="stars-list">
-                                <li><i class="fas fa-star star-light"></i></li>
-                                <li><i class="fas fa-star star-light"></i></li>
-                                <li><i class="fas fa-star star-light"></i></li>
-                                <li><i class="fas fa-star star-light"></i></li>
-                                <li><i class="fas fa-star "></i></li>
+                                <li><i data-aos="fade-left" data-aos-delay="700" data-aos-duration="500" class="fas  fa-star star-light"></i></li>
+                                <li><i data-aos="fade-left" data-aos-delay="700" data-aos-duration="500" class="fas  fa-star star-light"></i></li>
+                                <li><i data-aos="fade-left" data-aos-delay="700" data-aos-duration="500" class="fas  fa-star star-light"></i></li>
+                                <li><i data-aos="fade-left" data-aos-delay="700" data-aos-duration="500" class="fas  fa-star star-light"></i></li>
+                                <li><i data-aos="fade-left" data-aos-delay="700" data-aos-duration="500" class="fas  fa-star "></i></li>
                             </ul>
                         </div>
                         <p class="review-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum animi reiciendis error
@@ -256,27 +257,27 @@
                     </div>
                     <div class="points">
                         <ul id="points-list">
-                            <li>
+                            <li data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
                                 <h3>
-                                    Lorem, ipsum dolor.
+                                    Cafes tomados
                                     <p id="points-a"></p>
                                 </h3>
                             </li>
-                            <li>
+                            <li data-aos="fade-up" data-aos-delay="700" data-aos-duration="500">
                                 <h3>
-                                    Doloribus, dignissimos sint.
+                                    Clientes satisfechos
                                     <p id="points-b">2003</p>
                                 </h3>
                             </li>
-                            <li>
+                            <li data-aos="fade-up" data-aos-delay="900" data-aos-duration="500">
                                 <h3>
-                                    Illum, blanditiis at!
+                                    Dias contando
                                     <p id="points-c">2003</p>
                                 </h3>
                             </li>
-                            <li>
+                            <li data-aos="fade-up" data-aos-delay="1100" data-aos-duration="500">
                                 <h3>
-                                    Mollitia, autem est.
+                                    Clientes subscritos
                                     <p id="points-d">2003</p>
                                 </h3>
                             </li>
@@ -293,7 +294,7 @@
 
 
 
-        <div id="modal">
+        <div id="modal" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
             <i id="exit-modal" class="fas fa-times"></i>
             <div class="modal-img">
                 <img id="modal-image" src="" alt="">
@@ -331,6 +332,10 @@
         </div>
         
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <script src="js/script.js"></script>
 </body>
 
