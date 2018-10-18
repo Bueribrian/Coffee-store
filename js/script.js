@@ -52,17 +52,49 @@ window.onload = function(){
     var leftImg,rightImg;
     leftImg = document.querySelector('#left-img')
     rightImg = document.querySelector('#right-img')
+    var imagenesUrl =[
+        '/images/gallery1.jpg',
+        '/images/gallery2.jpg',
+        '/images/gallery3.jpg',
+        '/images/gallery4.jpg',
+        '/images/gallery5.jpg',
+        '/images/gallery6.jpg',
+        '/images/gallery7.jpg',
+        '/images/gallery8.jpg',
+    ]
+    
+    var indexImg = 0
+    
 
     images.map(function(img){
-        img.addEventListener('click',function(){
+        var openModal = function(index){
             modal.style.display='block'
             modalImg.src = img.src
-        })
+        }
+        img.addEventListener('click',openModal)
+
+        
+
         modalExit.addEventListener('click',function(){
             modal.style.display='none'
         })
-    })
+       
 
+    })
+    leftImg.addEventListener('click',function(){
+        indexImg === 0 ? indexImg = 7 : indexImg--;
+        
+        modalImg.src = imagenesUrl[indexImg]
+        console.log(imagenesUrl[indexImg])
+       
+    })
+    rightImg.addEventListener('click',function(){
+        indexImg === 7 ? indexImg = 0 : indexImg++;
+        
+        modalImg.src = imagenesUrl[indexImg]
+        console.log(imagenesUrl[indexImg])
+       
+    })
 
    //POINST
    var points = function (){
